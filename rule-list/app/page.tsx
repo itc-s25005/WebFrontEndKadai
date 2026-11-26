@@ -21,7 +21,7 @@ export default async function Page() {
               <h2 className={styles.name}>{game.name}</h2>
               <p className={styles.summary}>{game.summary}</p>
               <p className={styles.meta}>
-                最小: {game.players}人<br></br>
+                最低: {game.players}人<br></br>
                 最大: {game.players2}人<br></br>
                 約{game.time}分<br></br>
               </p>
