@@ -24,3 +24,9 @@ export async function getGames(): Promise<Game[]> {
   const data = await client.getList<Game>({ endpoint: ENDPOINT });
   return data.contents;
 }
+
+export async function getGame(id: string): Promise<Game> {
+  "use cache";
+  cacheLife("minutes");
+  return client.get<Game>({ endpoint: ENDPOINT, contentId: id });
+}

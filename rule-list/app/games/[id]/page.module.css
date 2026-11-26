@@ -1,0 +1,55 @@
+.main {
+  background-color: #fff;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #666;
+  text-decoration: none;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+}
+
+.badge {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.rules {
+  line-height: 1.9;
+}
+
+.rules h2 {
+  margin: 32px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #eee;
+  font-size: 1.3rem;
+}
+
+.rules ul,
+.rules ol {
+  padding-left: 1.5em;
+}

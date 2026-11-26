@@ -9,9 +9,9 @@ export default async function Page() {
     <main className={styles.main}>
       <h1 className={styles.title}>Rule List</h1>
       <p className={styles.lead}>
-        トランプゲームのルールを載せたサイトです。
+        トランプゲームのルールをざっくりまとめて載せたサイトです。
         <br />
-        目安時間はあくまで目安のため、プレイ人数やプレイヤーの技量次第で変わります。
+        目安時間はあくまで<strong>目安</strong>のため、プレイ人数やプレイヤーの技量次第で変わります。
       </p>
 
       <ul className={styles.list}>
@@ -21,7 +21,7 @@ export default async function Page() {
               <h2 className={styles.name}>{game.name}</h2>
               <p className={styles.summary}>{game.summary}</p>
               <p className={styles.meta}>
-                目安人数: {game.players}<br></br>
+                最小: {game.players}人<br></br>
                 最大: {game.players2}人<br></br>
                 約{game.time}分<br></br>
               </p>
