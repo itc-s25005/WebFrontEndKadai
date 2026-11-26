@@ -45,7 +45,7 @@ export default function Page({
   params: Promise<{ id: string }>;
 }) {
   return (
-    <Suspense fallback={<p>読み込み中...</p>}>
+    <Suspense fallback={<p className={styles.loading}>読み込み中...</p>}>
       <Detail params={params} />
     </Suspense>
   );
