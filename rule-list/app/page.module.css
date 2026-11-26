@@ -13,6 +13,7 @@
 
 .title::before {
   content: "♠ ";
+  color: #586cff;
 }
 
 .title::after {
